@@ -1,0 +1,118 @@
+/* =================================================== */
+/* REGRAS DE RESPONSIVIDADE (TVs, Tablets e Celulares) */
+/* =================================================== */
+
+/* 1. TVs e Monitores Ultra-wide (Telas a partir de 1600px) */
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1500px; /* Amplia a área do conteúdo em telas grandes */
+  }
+
+  body {
+    font-size: 18px; /* Otimiza a leitura à distância */
+  }
+
+  .mosaic-title {
+    font-size: 2.4rem;
+  }
+}
+
+/* 2. Tablets em Modo Paisagem e Telas Médias (Até 992px) */
+@media (max-width: 992px) {
+  .about-grid, 
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr); /* Organiza cartões em 2 colunas */
+  }
+
+  .mosaic-grid {
+    grid-template-columns: 1fr; /* Mosaico passa para coluna única */
+  }
+
+  .mosaic-item {
+    min-height: 350px;
+  }
+}
+
+/* 3. Tablets em Modo Retrato e Celulares (Até 768px) */
+@media (max-width: 768px) {
+  .about, .services, .portfolio, .contact {
+    padding: 60px 0; /* Diminui os espaçamentos exagerados */
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .nav-container {
+    height: 70px;
+  }
+
+  .logo-img {
+    height: 60px; /* Redimensiona a logo proporcionalmente */
+  }
+
+  .nav-links {
+    display: none; /* Oculta a lista de navegação no mobile */
+  }
+
+  /* Converte todas as seções e formulários para 1 única coluna */
+  .mosaic-grid, 
+  .about-grid, 
+  .services-grid, 
+  .portfolio-grid, 
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .mosaic-item {
+    min-height: 300px;
+  }
+
+  .mosaic-overlay {
+    padding: 20px;
+  }
+
+  .mosaic-title {
+    font-size: 1.4rem;
+  }
+
+  .section-title {
+    margin-bottom: 36px;
+  }
+
+  .section-title h2 {
+    font-size: 1.6rem;
+  }
+
+  .service-item {
+    padding: 20px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+}
+
+/* 4. Smartphones / Celulares Pequenos (Até 480px) */
+@media (max-width: 480px) {
+  .btn-header {
+    padding: 6px 12px;
+    font-size: 0.68rem;
+  }
+
+  .btn {
+    width: 100%; /* Botões ocupam 100% da largura para facilitar o toque */
+    text-align: center;
+  }
+
+  .mosaic-title {
+    font-size: 1.25rem;
+  }
+
+  .contact-details li {
+    font-size: 0.85rem;
+  }
+}
