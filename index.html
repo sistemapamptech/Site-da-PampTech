@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pamptech | Soluções e Desenvolvimento</title>
+  
+  <!-- CSS Principal -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- CSS Exclusivo para Responsividade (TVs, Tablets e Celulares) -->
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+  <!-- Navegação Fixa -->
+  <header>
+    <div class="container nav-container">
+      <!-- Tag da Logo com Duas Imagens (Light e Dark) -->
+      <a href="#topo" class="logo-link" aria-label="Voltar ao topo">
+        <img src="Imagem/LogoPamptech-removebg.png" alt="Pamptech" class="logo-img logo-light">
+        <img src="Imagem/LogoPamptech-Dark-removebg.png" alt="Pamptech" class="logo-img logo-dark">
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#portfolio">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <!-- Ações do Menu e Botão para Alternar Modo Dark/Light -->
+      <div class="nav-actions">
+        <a href="#contato" class="btn-header">Iniciar Projeto</a>
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Alternar tema">
+          <span id="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section em Mosaico -->
+  <section class="hero-mosaic container">
+    <div class="mosaic-grid">
+      
+      <!-- Card Principal de Destaque -->
+      <div class="mosaic-item">
+        <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80" alt="Ambiente de trabalho Pamptech">
+        <div class="mosaic-overlay">
+          <span class="mosaic-tag">Desenvolvimento & Estratégia</span>
+          <h1 class="mosaic-title">Elegância e Clareza no Desenvolvimento Web</h1>
+          <p class="mosaic-desc">Transformamos marcas e empresas com soluções digitais robustas, otimizadas e visualmente sofisticadas.</p>
+          <a href="#contato" class="btn">Solicitar Orçamento</a>
+        </div>
+      </div>
+
+      <!-- Card Secundário -->
+      <div class="mosaic-item" style="min-height: 200px;">
+        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" alt="Galeria de Projetos">
+        <div class="mosaic-overlay">
+          <span class="mosaic-tag">Galeria Recente</span>
+          <h2 class="mosaic-title" style="font-size: 1.3rem;">Confira Nossos Últimos Projetos</h2>
+          <a href="#portfolio" style="color: var(--accent); font-size: 0.8rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Ver Projetos &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Seção Sobre -->
+  <section id="sobre" class="about">
+    <div class="container">
+      <div class="section-title">
+        <span>Conceito & Filosofia</span>
+        <h2>A Essência da Pamptech</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Design Minimalista</h3>
+          <p>Eliminamos o excesso para destacar o essencial. Interfaces com navegação fluida e estética harmoniosa.</p>
+        </div>
+        <div class="about-card">
+          <h3>Sólida Tecnologia</h3>
+          <p>Desenvolvimento moderno focado em alta velocidade, segurança e otimização para motores de busca (SEO).</p>
+        </div>
+        <div class="about-card">
+          <h3>Arquitetura Sob Medida</h3>
+          <p>Soluções construídas para refletir a autoridade e a identidade única do seu negócio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Serviços -->
+  <section id="servicos" class="services container">
+    <div class="section-title">
+      <span>O que oferecemos</span>
+      <h2>Soluções Digitais</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-item">
+        <span class="service-number">01</span>
+        <div class="service-content">
+          <h3>Websites Institucionais</h3>
+          <p>Páginas sofisticadas projetadas para empresas que buscam posicionar sua marca com relevância no meio digital.</p>
+        </div>
+      </div>
+      <div class="service-item">
+        <span class="service-number">02</span>
+        <div class="service-content">
+          <h3>Landing Pages Premium</h3>
+          <p>Estruturas focadas em conversão, combinando forte apelo visual a uma experiência fluida para o usuário.</p>
+        </div>
+      </div>
+      <div class="service-item">
+        <span class="service-number">03</span>
+        <div class="service-content">
+          <h3>Redesign e Modernização</h3>
+          <p>Atualização técnica e estética para portais antigos, elevando o padrão de usabilidade e elegância.</p>
+        </div>
+      </div>
+      <div class="service-item">
+        <span class="service-number">04</span>
+        <div class="service-content">
+          <h3>Otimização e Performance</h3>
+          <p>Melhoria contínua na velocidade de carregamento e adaptação impecável para dispositivos móveis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Portfólio -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="section-title">
+        <span>Galeria de Trabalhos</span>
+        <h2>Projetos Recentes</h2>
+      </div>
+      <div class="portfolio-grid">
+        
+        <div class="portfolio-card">
+          <div class="portfolio-card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" alt="Atelier de Arquitetura">
+          </div>
+          <div class="portfolio-info">
+            <h4>Atelier de Arquitetura</h4>
+            <p>Plataforma institucional minimalista com foco no portfólio visual.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <div class="portfolio-card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=800&q=80" alt="Lumière Consultoria">
+          </div>
+          <div class="portfolio-info">
+            <h4>Lumière Consultoria</h4>
+            <p>Portal refinado para agendamentos e serviços corporativos.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <div class="portfolio-card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Maison Concept">
+          </div>
+          <div class="portfolio-info">
+            <h4>Maison Concept</h4>
+            <p>Landing page elegante para lançamento de produtos de luxo.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Contato -->
+  <section id="contato" class="contact container">
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="section-title" style="text-align: left;">
+          <span>Atendimento</span>
+          <h2>Inicie Seu Projeto</h2>
+        </div>
+        <p>Estamos prontos para estruturar a presença digital da sua empresa com tecnologia e clareza.</p>
+        
+        <ul class="contact-details">
+          <li><strong>E-mail:</strong> contato@pamptech.com.br</li>
+          <li><strong>Telefone:</strong> +55 (11) 99999-0000</li>
+          <li><strong>Horário:</strong> Segunda a Sexta, das 9h às 18h</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso!');">
+        <div class="form-group">
+          <input type="text" placeholder="Seu Nome Completo" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Seu E-mail Corporativo" required>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Assunto do Projeto">
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Conte-nos brevemente sobre a sua ideia..." required></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Pamptech - Soluções e Desenvolvimento. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript para Alternância dos Temas (Light / Dark) -->
+  <script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+
+    const savedTheme = localStorage.getItem('theme') || 'light';
+
+    if (savedTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      themeIcon.textContent = '☀️';
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      themeIcon.textContent = '🌙';
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      
+      if (currentTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+        themeIcon.textContent = '🌙';
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        themeIcon.textContent = '☀️';
+      }
+    });
+  </script>
+  <script src="script.js"></script>
+
+</body>
+</html>
